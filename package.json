@@ -13,14 +13,16 @@
   },
   "devDependencies": {
     "@types/jest": "^24.0.23",
+    "chance": "^1.1.4",
     "eslint": "^6.7.2",
     "jest": "^24.9.0",
+    "nodemon": "^2.0.1",
     "supertest": "^4.0.2"
   },
   "scripts": {
     "test": "jest --verbose",
     "test:watch": "npm run test -- --watchAll --coverage",
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
