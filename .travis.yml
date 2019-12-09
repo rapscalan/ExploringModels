@@ -1,7 +1,9 @@
 language: node_js
-node_js:
+node_js: node
   - "9"
 
 script:
   - npm run lint
   - npm test
+service: mongodb
+env: MONGODB_URI=mongodb://localhost:27017/travis
